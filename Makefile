@@ -1,6 +1,8 @@
 .DEFAULT_GOAL := help
 
-build: yarn-install ## build develoment environment with laradock
+build: ## build develoment environment with laradock
+	if ! [ -f .env ];then cp .env.example .env;fi
+	docker-compose run --rm yarn install
 
 serve: ## Run Server
 	docker-compose up app
