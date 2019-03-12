@@ -2,22 +2,20 @@
 
 > Nuxt.js project
 
-## Build Setup
+## Setup
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+```bash
+# 初回のみ
+make build
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+# アプリケーションを起動する
+make serve
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+http://localhost:3000 にアクセスする
 
+## Requirements
+* Docker
+* docker-compose
+* node:9
+* yarn
